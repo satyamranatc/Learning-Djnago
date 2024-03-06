@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Site</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+            font-size: 40px;
+            text-align: center;
+        }
+        .Card
+        {
+            padding: 30px;
+            background-color: lightblue;
+            color: black;
+            border-radius: 20px;
+            margin: 20px;
+            width: 200px;
+            height: 100px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+        <h1>Hello</h1>
+        <hr>
+        {% for i in Data %}
+
+            <div class = "Card">
+                <h4>{{i}}</h4>
+            </div>
+
+        {% endfor %}
+    </center>
+    
+</body>
+</html>
